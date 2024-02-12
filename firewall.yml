@@ -7,3 +7,10 @@
         port: 8099/tcp  # Corrected port number
         permanent: true
         state: disabled
+    - name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+      ansible.builtin.user:
+        name: johnd
+    - name: Add the user 'ruin' with a specific uid and a primary group of 'admin'
+      ansible.builtin.user:
+        name: ruin
+    
