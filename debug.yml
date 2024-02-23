@@ -1,7 +1,6 @@
 - name: show fact variable
   hosts: all
-  gather_facts: false
   tasks:
      - name: Print the fact variable value
        ansible.builtin.debug:
-           msg: System hostname is {{ansible_facts['hostname']}} and ip address is {{ansible_facts['default_ipv4']['address']}} and {{ansible_managed}}
+           msg: System hostname {{ansible_managed}}
