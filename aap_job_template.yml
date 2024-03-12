@@ -15,3 +15,4 @@
        verbosity: 0
        credentials: "controller"
        state: "present"
+       validate_certs: false
