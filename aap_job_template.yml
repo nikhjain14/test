@@ -1,15 +1,14 @@
 ---
 - hosts: all
   tasks:
-   - name: Create Ping job template
+   - name: Create job template
      job_template:
-       name: "Ping"
+       name: "Controller_test"
        job_type: "run"
        organization: "Default"
-       inventory: "Local"
-       project: "Demo"
-       playbook: "ping.yml"
+       inventory: "controller"
+       project: "AAP"
+       playbook: "aap_job_template.yml"
        verbosity: 0
-       credentials:
-         - "host_aap
+       credentials: "controller"
        state: "present"
