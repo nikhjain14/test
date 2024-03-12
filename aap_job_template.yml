@@ -8,7 +8,7 @@
        organization: "Default"
        inventory: "controller"
        project: "AAP"
-       playbook: "aap_job_template.yml"
+       playbook: "debug.yml"
        verbosity: 0
        credentials: "controller"
        state: "present"
