@@ -12,7 +12,7 @@
        inventory: "controller"
        project: "AAP"
        playbook: "debug.yml"
-       verbosity: 0
+       verbosity: 3
        credentials: "controller"
        state: "present"
        validate_certs: false
