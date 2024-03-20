@@ -9,6 +9,7 @@
         controller_password: admin        
         name: "Latest EE"
         image: "hub.example.com/ee-supported-rhel8:latest"
+        validate_certs: false
 
     - name: Promote Old EE
       ansible.controller.execution_environment:
@@ -17,3 +18,4 @@
         controller_password: admin
         name: "Old EE"
         image: "hub.example.com/ee-minimal-rhel8"
+        validate_certs: false
