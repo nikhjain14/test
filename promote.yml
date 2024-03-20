@@ -8,7 +8,7 @@
         controller_username: admin
         controller_password: admin        
         name: "Latest EE"
-        image: "hub.example.com/ee-supported-rhel8:latest"
+        image: "hub.example.com/ee-minimal-rhel8:latest"
         validate_certs: false
 
     - name: Promote Old EE
@@ -17,5 +17,5 @@
         controller_username: admin
         controller_password: admin
         name: "Old EE"
-        image: "hub.example.com/ee-minimal-rhel8"
+        image: "hub.example.com/ee-supported-rhel8:latest"
         validate_certs: false
