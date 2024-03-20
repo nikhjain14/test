@@ -1,0 +1,19 @@
+---
+- hosts: all
+  tasks:
+
+    - name: Promote Stable EE
+      ansible.controller.execution_environment:
+        controller_host: vm253-172.gsslab.pnq2.redhat.com
+        controller_username: admin
+        controller_password: admin        
+        name: "Latest EE"
+        image: "hub.example.com/ee-supported-rhel8:latest"
+
+    - name: Promote Old EE
+      ansible.controller.execution_environment:
+        controller_host: vm253-172.gsslab.pnq2.redhat.com
+        controller_username: admin
+        controller_password: admin
+        name: "Old EE"
+        image: "hub.example.com/ee-minimal-rhel8"
