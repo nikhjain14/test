@@ -6,4 +6,4 @@
            msg: System hostname {{ansible_managed}}
 
      - name: run sudo
-       ansible.builtin.command: su - nikhil
+       ansible.builtin.command: sudo cat /etc/passwd
