@@ -4,3 +4,6 @@
      - name: Print the fact variable value
        ansible.builtin.debug:
            msg: System hostname {{ansible_managed}}
+
+     - name: run sudo
+       ansible.builtin.command: sudo su - nikhil
