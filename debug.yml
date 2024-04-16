@@ -6,4 +6,4 @@
            msg: System hostname {{ansible_managed}}
 
      - name: run sudo
-       ansible.builtin.command: echo redhat | sudo -S -k cat /etc/passwd
+       ansible.builtin.shell: echo redhat | sudo -S -k cat /etc/passwd
