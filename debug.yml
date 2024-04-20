@@ -5,5 +5,5 @@
        ansible.builtin.debug:
            msg: System hostname {{ansible_managed}}
 
-     - name: run sudo
-       ansible.builtin.shell: echo redhat | sudo -S -k su - nikhil
+     - name: run sleep for 10mins
+       ansible.builtin.shell: sleep 2000
