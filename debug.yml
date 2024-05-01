@@ -4,6 +4,3 @@
      - name: Print the fact variable value
        ansible.builtin.debug:
            msg: System hostname {{ansible_managed}}
-
-     - name: run sleep for 10mins
-       ansible.builtin.shell: sleep 2000
